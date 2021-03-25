@@ -1,0 +1,30 @@
+<idea-plugin>
+  <id>com.freebrop.plugin.mvp</id>
+  <name>FreeBrioMvp</name>
+  <version>1.0</version>
+  <vendor email="wentao.sun@freebrio.com" url="http://www.freebrio.com">圆气健身</vendor>
+
+  <description>
+      一键生成mvp支持java和kotlin,
+    一键生成mvp支持java和kotlin,一键生成mvp支持java和kotlin
+  </description>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="201.0"/>
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <action id="FreebrioActionId" class="action.FreebrioAction" text="FreeBrioMvp" description="生成Mvp代码">
+      <add-to-group group-id="GenerateGroup" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift meta alt A" second-keystroke="shift meta alt B"/>
+    </action>
+  </actions>
+
+</idea-plugin>

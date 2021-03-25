@@ -1,0 +1,19 @@
+package $packagename
+
+import com.$cname.basic.base.mvp.IBaseView
+
+/**
+ * @author $author
+ * @Description: $description
+ * @date $date
+ */
+interface $nameContract {
+
+    interface View : IBaseView<Presenter> {
+
+    }
+
+    interface Presenter {
+
+    }
+}

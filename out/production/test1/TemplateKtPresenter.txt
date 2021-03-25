@@ -1,0 +1,14 @@
+package $packagename
+
+import com.$cname.basic.base.mvp.BaseVMPresenter
+
+/**
+ * @author $author
+ * @Description: $description
+ * @date $date
+ */
+class $namePresenter(view: $nameContract.View) : BaseVMPresenter<$nameContract.View, $nameViewModel>(view) , $nameContract.Presenter {
+
+    override fun getViewModelClass() = $nameViewModel::class.java
+
+}

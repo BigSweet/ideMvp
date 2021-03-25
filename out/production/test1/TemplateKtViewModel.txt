@@ -1,0 +1,7 @@
+package $packagename
+
+import com.$cname.basic.viewmodel.BaseViewModel
+
+class $nameViewModel : BaseViewModel() {
+
+}

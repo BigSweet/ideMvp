@@ -1,0 +1,21 @@
+package $packagename;
+
+import com.$cname.basic.base.mvp.BaseVMPresenter;
+
+/**
+ * @author $author
+ * @Description: $description
+ * @date $date
+ */
+public class $namePresenter extends BaseVMPresenter<$nameContract.View, $nameViewModel> implements $nameContract.Presenter {
+
+ public $namePresenter($nameContract.View view) {
+        super(view);
+
+    }
+
+    @Override
+    public Class getViewModelClass() {
+        return $nameViewModel.class;
+    }
+}
